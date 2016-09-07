@@ -7,10 +7,7 @@ Never had a personal blog up and running so I am not sure what my focus will be.
 * Email: reid.cooper8+github@gmail.com
 
 ##License
-The following directories and their contents are Copyright Reid Cooper. You may not reuse anything therein without my permission:
-
-* _posts/
-* images/
+Copyright Reid Cooper. You may not reuse anything therein without my permission. Except for this theme, you can use that.
 
 # slim
 

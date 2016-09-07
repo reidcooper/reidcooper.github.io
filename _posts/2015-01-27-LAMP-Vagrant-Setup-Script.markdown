@@ -11,12 +11,12 @@ This script is set up so it speeds up the process of configuring a fresh install
 * [Link!!!][setupScript]
 
 
-#Run:
+# Run:
 	chmod 755 LAMPVagrantSetupScript.sh
 	./LAMPVagrantSetupScript.sh
 
 
-#Example Code:
+# Example Code:
 
 This script is customizable to ping whatever you'd like. Just change the IP addresses at the bottom of the script.
 	
