@@ -19,44 +19,44 @@ This script is set up so it speeds up the process of configuring a fresh install
 # Example Code:
 
 This script is customizable to ping whatever you'd like. Just change the IP addresses at the bottom of the script.
-	
-{% highlight bash %}	
-	
+
+{% highlight bash %}
+
 	#!/bin/bash
- 
+
 	# Very basic LAMP set up to be used with vagrant ubuntu trusty
 	# Tweak as needed!
 	# Created by Reid Cooper
-	# reid.cooper8@gmail.com
-	 
+	# reid.promotions8+github@gmail.com
+
 	# Variables
 	DBPASSWD=password
 	echo "========================="
 	echo $'\n'"Running..."$'\n'
 	echo "========================="
-	 
+
 	echo $'\n'"Update Packages & Installing expect"$'\n'
 	sudo apt-get update
 	sudo apt-get -y install expect
 	echo "========================="
-	 
+
 	echo $'\n'"Installing Apache2"$'\n'
 	sudo apt-get -y install apache2
 	echo "========================="
-	 
+
 	echo $'\n'"Installing MySQL"$'\n'
 	echo "mysql-server mysql-server/root_password password $DBPASSWD" | sudo debconf-set-selections
 	echo "mysql-server mysql-server/root_password_again password $DBPASSWD" | sudo debconf-set-selections
-	 
+
 	sudo apt-get -y install mysql-server libapache2-mod-auth-mysql php5-mysql
 	echo "========================="
-	 
+
 	echo $'\n'"Activite MySQL"$'\n'
 	sudo mysql_install_db
 	echo "========================="
-	 
+
 	echo $'\n'"Finishing up MySQL"$'\n'
-	 
+
 	SECURE_MYSQL=$(expect -c "
 
 	set timeout 10
@@ -82,24 +82,24 @@ This script is customizable to ping whatever you'd like. Just change the IP addr
 
 	expect eof
 	")
-	 
+
 	sudo echo "$SECURE_MYSQL"
-	 
+
 	echo $'\n'"Finished MySQL"$'\n'
 	echo "========================="
-	 
+
 	echo $'\n'"Installing PHP"$'\n'
 	sudo apt-get -y install php5 libapache2-mod-php5 php5-mcrypt
 	echo "========================="
-	 
+
 	echo $'\n'"Moving info.php"$'\n'
 	sudo echo "<?php phpinfo(); ?>" | sudo tee -a /var/www/html/info.php
 	echo "========================="
-	 
+
 	echo $'\n'"Restarting Apache2"$'\n'
 	sudo service apache2 restart
 	echo "========================="
-	 
+
 	echo $'\n'"Installing phpmyadmin"$'\n'
 	echo "phpmyadmin phpmyadmin/dbconfig-install boolean true" | sudo debconf-set-selections
 	echo "phpmyadmin phpmyadmin/app-password-confirm password $DBPASSWD" | sudo debconf-set-selections
@@ -109,20 +109,20 @@ This script is customizable to ping whatever you'd like. Just change the IP addr
 	sudo apt-get -y install phpmyadmin
 	sudo php5enmod mcrypt
 	echo "========================="
-	 
+
 	echo $'\n'"Restarting Apache2"$'\n'
 	sudo service apache2 restart
 	echo "========================="
-	 
+
 	echo $'\n'"Creating Symlinks"$'\n'
 	sudo ln -s /vagrant/ /var/www/html/vagrant
 	echo "========================="
-	 
+
 	echo ""$'\n'
 	ifconfig eth0 | grep inet | awk '{ print $2 }'
 	echo ""$'\n'
 	echo "========================="
-	 
+
 	echo $'\n'"Finished :)"$'\n'
 
 {% endhighlight bash %}
