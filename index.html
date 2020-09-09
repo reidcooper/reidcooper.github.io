@@ -4,8 +4,13 @@ layout: default
 <div class="home">
 	<section>
 		<h2 class="smallcap">about</h2>
-		<p>I am Reid Cooper.</p>
-		<p>Software Engineer currently at <a href="http://www.mackweldon.com">Mack Weldon</a> in New York City. We specialize in reinventing men's wear basics. Currently I have been using Ruby on Rails and Javascript (Backbone/Marionette frameworks) built on the Spree e-Commerce platform. I graduated with a Masters in Software Engineering with excellent academic record and research experience - possess strong leadership and communication skills; effectively works in both team and independent settings. Extremely interested in UI/UX experiences as well as Web Application development.</p>
+    <p>
+      I'm Reid Cooper, a Senior Software Engineer at <a href="https://teachable.com/">Teachable</a>. Built with Rails and React.
+    </p>
+
+    <p>
+      I am also the creator of <a href="https://channelstore.roku.com/details/249075/dashcoop">Dashcoop</a>, a Roku Screensaver.
+    </p>
 
 		<p class="contact_info">
 			<ul>
@@ -18,17 +23,5 @@ layout: default
 			</ul>
 		</p>
 
-	</section>
-	<section>
-		<h2 class="smallcap">posts</h2>
-		<ul class="post-list">
-			{% for post in site.posts limit:5 %}
-			<li>
-				<span>{{ post.date | date: "%b %d, %Y" }}</span>
-				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-			</li>
-			{% endfor %}
-		</ul>
-		<p><a href="{{ "/archives/" | prepend: site.baseurl }}">view more...</a></p>
 	</section>
 </div>
