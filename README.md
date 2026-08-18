@@ -14,7 +14,7 @@ Staff Engineer with 11+ years of Ruby on Rails and 3 years of Golang, specializi
 ## Experience
 
 - \>> Senior Software Engineer II @ [Alloy](https://www.alloy.com)
-- Staff Engineer @ [Teachable](https://teachable.com/)
+- \>> Staff Engineer @ [Teachable](https://teachable.com/)
 - Software Engineer @ [Mack Weldon](https://mackweldon.com)
 
 ## Apps & Projects
