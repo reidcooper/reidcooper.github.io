@@ -1,6 +1,6 @@
 # Reid Cooper
 
-Staff Engineer with 11+ years of Ruby on Rails and 3 years of Golang, specializing in microservice architecture, distributed systems, and platform reliability. Known for leading high-stakes engineering initiatives, scaling engineering culture through guilds and mentorship, and delivering complex systems across cross-functional teams at scale.
+Staff Engineer with 11+ years of Ruby on Rails and 3 years of Golang, specializing in microservice architecture, distributed systems, and platform reliability. Known for leading high-stakes engineering projects, mentoring engineers, and driving organizational impact through strategic technical leadership.
 
 - [github.com/reidcooper](https://github.com/reidcooper)
 
@@ -13,7 +13,8 @@ Staff Engineer with 11+ years of Ruby on Rails and 3 years of Golang, specializi
 
 ## Experience
 
-- \>> Staff Engineer @ [Teachable](https://teachable.com/)
+- \>> Senior Software Engineer II @ [Alloy](https://www.alloy.com)
+- Staff Engineer @ [Teachable](https://teachable.com/)
 - Software Engineer @ [Mack Weldon](https://mackweldon.com)
 
 ## Apps & Projects
