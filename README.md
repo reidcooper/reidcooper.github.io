@@ -19,5 +19,5 @@ Staff Engineer with 11+ years of Ruby on Rails and 3 years of Golang, specializi
 
 ## Apps & Projects
 
-- [Dashcoop](https://channelstore.roku.com/details/cb98447cd7bd6e3f8f006a377578298a:4d354cfac834da07bf0eaa0219514637/dashcoop), a Roku screensaver (since 2018) — 9,300+ downloads
+- [Dashcoop](https://channelstore.roku.com/details/cb98447cd7bd6e3f8f006a377578298a:4d354cfac834da07bf0eaa0219514637/dashcoop), a Roku screensaver (since 2018) — 9,500+ downloads
 - Kane Brewery Management System, a Rails brewery management app
